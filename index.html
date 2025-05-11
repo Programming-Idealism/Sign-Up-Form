@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <form action="#">
+        <fieldset>
+            <legend>Contact Us Here</legend>
+            <h1>If you have any questions regarding our special Japanese courses please fill and submit these forms:
+            </h1>
+            <div class="main-container">
+                <img src="images/logo.png" alt="form-image">
+                <div class="right-side-container">
+                    <div class="apply">
+                        <div class="item">
+                            <label for="firstname">First Name:</label>
+                            <input class="required" type="text" name="firstname" id="firstname" placeholder="Name?"
+                                maxlength="15" required>
+                            <p>First Name must be written in letters. and contains between 2-15</p>
+                        </div>
+                        <div class="item">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" class="required" name="lastname" id="lastname" placeholder="Last Name?"
+                                maxlength="15" required>
+                            <p>Last Name must be written in letters. and contains between 2-15</p>
+                        </div>
+                        <div class="item">
+                            <label for="email">Email:</label>
+                            <input type="email" class="required" name="email" id="email" placeholder="Email?" required>
+                            <p>Email must be a valid address. For example: me@mydomain.com</p>
+                        </div>
+                        <div class="item">
+                            <label for="phonenumber">Phone Number:</label>
+                            <input type="tel" class="required" name="phonenumber" id="phone-number"
+                                placeholder="Phone Number?" required maxlength="10">
+                                <p>Phone Number must be a valid Israel telephone number meaning 10 numbers maximum</p>
+                        </div>
+                        <div class="item">
+                            <label for="password">Password:</label>
+                            <input type="password" class="required" name="password" id="password"
+                                placeholder="Password?" maxlength="20" required>
+                                <p>Password must contain between 8-20 alphanumerics (@_- are also allowed)</p>
+                        </div>
+                        <div class="item">
+                            <label for="confirmpassword">Confirm Password</label>
+                            <input type="password" class="required" name="password" id="password"
+                                placeholder="Confirm Password" maxlength="20" required>
+                                <p>Confirm Password must be identical to Password</p>
+                        </div>
+                    </div>
+                    <button class="submit-btn">Create Account</button>
+                    <button class="has-account">Already have an account? <span>Log in</span></button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div class="footer">
+        <h2>我社は必ず日本語の初心者に向けてコンテンツが助かると断言を出来ます！</h2>
+        <svg height="150" width="150" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="50" rx="0" ry="0" height="110" width="180" fill="white"></rect>
+            <circle cx="120" cy="105" r="35" fill="red"></circle>
+        </svg>
+    </div>
+</body>
+
+</html>

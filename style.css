@@ -1,0 +1,206 @@
+:root {
+    --maincolor: red;
+    --mainbackgroundcolor: darkred;
+    --mainfontsize: 1.2rem;
+    --mainfontweight: bold;
+    --mainfontfamily: roboto;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #232323;
+}
+
+h1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: var(--mainfontweight);
+    font-size: calc(var(--mainfontsize) + 13px);
+    font-family: var(--mainfontfamily);
+    -webkit-text-stroke: 1px rgb(212, 63, 13);
+    font-weight: bolder;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+
+.main-container {
+    width: 100%;
+    display: flex;
+    /* border: 2px solid red; */
+    height: 79vh;
+    margin-top: 20px;
+    /* gap: 10px; */
+    color: white;
+}
+
+img {
+    width: 55%;
+}
+
+.item {
+    flex:calc(100% / 3)
+}
+
+input {
+    border: 5px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input.valid {
+    border: 5px solid green;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input.valid:focus {
+    background-color: lightgreen;
+}
+
+input.invalid {
+    border: 5px solid red;
+    /* background-color: palegreen; */
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+input.invalid:focus {
+    background-color: rgb(249, 123, 85);
+}
+
+input + p {
+    font-family: roboto;
+    font-size: 0.9rem;
+    color: orange;
+    text-align: center;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+}
+
+.right-side-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    flex-direction: column;
+    font-family: var(--mainfontfamily); 
+    font-size: var(--mainfontsize); 
+    font-weight: var(--mainfontweight);
+    text-align: center;
+    opacity: 0.9;
+    background-color: rgb(0, 0, 0);
+    transition: all 400ms;
+}
+
+.right-side-container:hover {
+    opacity: 1;
+}
+
+input {
+    width: 100%;
+    font-size: 1rem;
+    font-family: var(--mainfontfamily);
+}
+
+.submit-btn {
+    font-family: var(--mainfontfamily);
+    font-size: var(--mainfontsize);
+    margin-top: 5px;
+    background-color: rgb(250, 26, 26);
+    border: 3px ridge darkred;
+    font-weight: var(--mainfontweight);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.submit-btn:hover {
+    background-color: rgb(214, 5, 5);
+    color: white;
+    transform: scale(1.1);
+}
+
+legend {
+    text-align: center;
+    font-family: var(--mainfontfamily);
+    font-size: calc(var(--mainfontsize) + 20px);
+    color: aqua;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.has-account {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    cursor: pointer;
+    font-size: var(--mainfontsize);
+    border: none;
+    margin-top: 1px;
+    border: 2px ridge aqua;
+    transition: all 500ms;
+}
+
+.has-account:hover {
+    background-color: navy;
+    color: white;
+    transform: scale(1.1);
+}
+
+span {
+    color: greenyellow;
+    font-weight: var(--mainfontweight);
+    cursor: pointer;
+}
+
+.apply {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 560px;
+    padding: 50px 50px 50px 50px;
+    border: 10px ridge aqua;
+    gap: 30px;
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #232323;
+}
+
+h2 {
+    font-family: var(--mainfontfamily);
+    font-size: calc(var(--mainfontsize) + 20px);
+    margin-top: 50px;
+    color: rgb(37, 185, 244);
+}
+
+svg {
+    margin-top: 20px;
+}
